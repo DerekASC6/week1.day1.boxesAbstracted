@@ -1,12 +1,12 @@
-const number_of_boxes_in_row = 10;
-const number_of_boxes_in_column = 1;
+const number_of_boxes_in_row = 20;
+const number_of_boxes_in_column = 10;
 
 let box_width, box_height;
 
 function setup(){
     createCanvas(600,600);
     box_height = height;
-    box_width = ___;
+    box_width = (canvas.width/number_of_boxes_in_row);
     // TASK #1 - set the box_width as the width of the canvas
     // divided by the number of boxes in a row.
 }
@@ -14,13 +14,13 @@ function setup(){
 function draw(){
     // TASK #2 - loop through each box in the row by
     // replacing the blank with the correct number/variable
-    for(let i = 0; i < ___ ; i++){
-        const y = ___;
+    for(let i = 0; i < 600 ; i++){
+        const y =0;
         // TASK #3 - replace the blank with the y-coordinate for 
         // current box
         // HINT: it will always be the same
 
-        const x = ___;
+        const x = 0;
         // TASK #4 - replace the blank with the x-coordinate for 
         // current box
         // HINT: this changes with each box in the row
@@ -44,6 +44,10 @@ function draw(){
         // TASK #8 - Create another for loop under this task that
         // loops through each box in the column, using "j" as the 
         // iterator.
+        for(let j =0; j<number_of_boxes_in_column; j++){
+
+        }
+
         // HINT: the code will look very similar to the first "for"
         // loop. 
         // NOTE: this is a nested "for" loop, a loop within
